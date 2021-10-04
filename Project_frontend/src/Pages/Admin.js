@@ -13,8 +13,10 @@ function Admin() {
         Create project
       </button>
 
-      <div className='project_box'>
-        <h1>{project.project1}</h1>
+      <div>
+        {project.map((project) => {
+          return <h1 className='project_name'>{project}</h1>
+        })}
       </div>
     </div>
   )

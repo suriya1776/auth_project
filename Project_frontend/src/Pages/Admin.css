@@ -1,5 +1,8 @@
-.admin_page {
+* {
   background-color: rgb(223, 220, 216);
+}
+
+.admin_page {
   height: 20rem;
 }
 
@@ -22,12 +25,13 @@
   border: solid 5px var(--text-color);
   padding: 1rem;
 }
-.project_box {
-  background-color: rgb(86, 241, 86);
 
-  margin: 1rem 0;
+.project_name {
+  background-color: rgb(86, 241, 86);
+  margin: 0.5rem 0;
   margin-left: 1rem;
-  width: 50%;
+  width: 30%;
   padding: 1rem;
   border-radius: 2px;
+  color: white;
 }
