@@ -1,0 +1,33 @@
+.admin_page {
+  background-color: rgb(223, 220, 216);
+  height: 20rem;
+}
+
+.project_button {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(88, 88, 194);
+  color: white;
+}
+.project_button:hover {
+  cursor: pointer;
+}
+.project_list {
+  border: solid 5px var(--text-color);
+  padding: 1rem;
+}
+.project_box {
+  background-color: rgb(86, 241, 86);
+
+  margin: 1rem 0;
+  margin-left: 1rem;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 2px;
+}
