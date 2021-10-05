@@ -20,6 +20,7 @@ export function ProjectContextProvider({ children }) {
   }
   const displayTask = () => {
     setCount1(count1 + 1)
+
     setTask([...task, `Task${count1} has been created`])
   }
 

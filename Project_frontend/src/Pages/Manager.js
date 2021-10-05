@@ -3,10 +3,10 @@ import './Manager.css'
 import { useProjectContext } from '../Context/GlobalState'
 
 function Manager(props) {
-  const { project, task, displayTask } = useProjectContext()
+  const { project } = useProjectContext()
 
-  const taskHandler = (index1) => {
-    displayTask()
+  const clickHandler = (index) => {
+    props.history.push(`/project${index + 1}`)
   }
 
   return (
@@ -15,14 +15,12 @@ function Manager(props) {
       {project.map((project, index) => {
         return (
           <div className='project_name'>
-            <h1 key={index}>
+            <h1 key={index} onClick={() => clickHandler(index)}>
               {project}
-              <button onClick={() => taskHandler(index)}>CREATE TASK</button>
             </h1>
           </div>
         )
       })}
-      <div>{task}</div>
     </div>
   )
 }
