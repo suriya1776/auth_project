@@ -1,14 +1,23 @@
 import React from 'react'
 import { useProjectContext } from '../Context/GlobalState'
-function Developer2() {
+function Developer2(props) {
   const { task3 } = useProjectContext()
+
+  const logOut = () => {
+    props.history.push('/')
+  }
 
   return (
     <div>
-      <h1>developer2 page</h1>
+      <div className='admin_sub'>
+        <h1 className='form_heading '>DEVELOPER2 PAGE</h1>
+        <button onClick={logOut} className='logout'>
+          LOG OUT
+        </button>
+      </div>
       <div>
         {task3.map((task3) => {
-          return <h1>{task3}</h1>
+          return <h1 className='project_name'>{task3}</h1>
         })}
       </div>
     </div>

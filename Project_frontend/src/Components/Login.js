@@ -45,8 +45,9 @@ function Login(props) {
       <article>
         <h1 className='form_heading'>LOGIN PAGE</h1>
         <form className='form'>
-          <div className='form_id'>
+          <div className='form_name'>
             <label htmlFor='id'>ID:</label>
+
             <input
               className='id_input'
               type='text'
@@ -70,7 +71,7 @@ function Login(props) {
           <div className='form_name'>
             <label htmlFor='usertype'>User type:</label>
             <input
-              className='name_input'
+              className='user_input'
               type='text'
               id='usertype'
               name='usertype'

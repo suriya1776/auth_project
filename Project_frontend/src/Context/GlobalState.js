@@ -15,14 +15,16 @@ export const ProjectContext = createContext({
 const PROJECT = []
 const TASK = []
 const TASK1 = []
+const TASK2 = []
+const TASK3 = []
 export function ProjectContextProvider({ children }) {
   const [project, setProject1] = useState(PROJECT)
   const [task, setTask] = useState(TASK)
   const [count, setCount] = useState(1)
   const [count1, setCount1] = useState(1)
   const [task1, setTask1] = useState(TASK1)
-  const [task2, setTask2] = useState([])
-  const [task3, setTask3] = useState([])
+  const [task2, setTask2] = useState(TASK2)
+  const [task3, setTask3] = useState(TASK3)
   const display = () => {
     setCount(count + 1)
 

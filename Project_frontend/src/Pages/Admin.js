@@ -1,14 +1,24 @@
 import React from 'react'
 
 import './Admin.css'
+
 import { useProjectContext } from '../Context/GlobalState'
 
-function Admin() {
+function Admin(props) {
   const { project, display } = useProjectContext()
+
+  const logOut = () => {
+    props.history.push('/')
+  }
 
   return (
     <div className='admin_page'>
-      <h1 className='form_heading '>ADMIN PAGE</h1>
+      <div className='admin_sub'>
+        <h1 className='form_heading '>ADMIN PAGE</h1>
+        <button onClick={logOut} className='logout'>
+          LOG OUT
+        </button>
+      </div>
       <button className='project_button' onClick={display}>
         Create project
       </button>

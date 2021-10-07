@@ -37,10 +37,16 @@
   border: none;
 }
 .id_input {
-  margin-left: 1.9rem;
+  margin-left: 3.9rem;
+  border: solid black 1px;
 }
 .name_input {
-  margin-left: 0.5rem;
+  margin-left: 2.5rem;
+  border: solid black 1px;
+}
+.user_input {
+  margin-left: 1.55rem;
+  border: solid black 1px;
 }
 .form_buttons > button:hover {
   cursor: pointer;

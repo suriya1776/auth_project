@@ -13,19 +13,19 @@ const Data = [
     id: ['1207', '1234', '735', '678', '578'],
     developer: [
       {
-        name: 'developer1',
+        name: 'Developer1',
         id: '735',
-        usertype: 'developer',
+        usertype: 'Developer',
       },
       {
-        name: 'developer2',
+        name: 'Developer2',
         id: '678',
-        usertype: 'developer',
+        usertype: 'Developer',
       },
       {
-        name: 'developer3',
+        name: 'Developer3',
         id: '578',
-        usertype: 'developer',
+        usertype: 'Developer',
       },
     ],
   },
